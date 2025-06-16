@@ -127,9 +127,9 @@ global.getText = function (...args) {
 try {
     var appStateFile = resolve(join(global.client.mainPath, global.config.APPSTATEPATH || "appstate.json"));
     var appState = require(appStateFile);
-    logger.loader(global.getText("priyansh", "foundPathAppstate"))
+    logger.loader(global.getText("saim", "foundPathAppstate"))
 }
-catch { return logger.loader(global.getText("priyansh", "notFoundPathAppstate"), "error") }
+catch { return logger.loader(global.getText("saim", "notFoundPathAppstate"), "error") }
 
 //========= Login account and start Listen Event =========//
 
